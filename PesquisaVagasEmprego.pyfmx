@@ -1,0 +1,185 @@
+object frmPesquisaVagasEmprego: TfrmPesquisaVagasEmprego
+  Left = 0
+  Top = 0
+  Caption = 'Pesquisa de vagas de emprego'
+  ClientHeight = 393
+  ClientWidth = 640
+  BorderStyle = ToolWindow
+  object grp_linguagem: TGroupBox
+    Align = Top
+    Size.Width = 640.000000000000000000
+    Size.Height = 105.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Linguagens de programa'#231#227'o:'
+    TabOrder = 1
+    object lbl_backend: TLabel
+      FocusControl = cbx_backend
+      Position.X = 32.000000000000000000
+      Position.Y = 40.000000000000000000
+      Size.Width = 81.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = '&Back-end:'
+      TabOrder = 3
+    end
+    object cbx_backend: TComboBox
+      Items.Strings = (
+        'Delphi'
+        'Python'
+        'Java'
+        'PHP'
+        'NodeJS')
+      Position.X = 32.000000000000000000
+      Position.Y = 65.000000000000000000
+      Size.Width = 153.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+    end
+    object lbl_frontend: TLabel
+      FocusControl = cbx_frontend
+      Position.X = 224.000000000000000000
+      Position.Y = 40.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = '&Front-end:'
+      TabOrder = 1
+    end
+    object cbx_frontend: TComboBox
+      Items.Strings = (
+        'Angular'
+        'React'
+        'VueJS')
+      Position.X = 224.000000000000000000
+      Position.Y = 65.000000000000000000
+      Size.Width = 153.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+    end
+  end
+  object grp_local: TGroupBox
+    Align = Top
+    Position.Y = 105.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 72.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Local'
+    TabOrder = 2
+    object chk_presencial: TCheckBox
+      Position.X = 32.000000000000000000
+      Position.Y = 32.000000000000000000
+      Size.Width = 97.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 40
+      Text = '&Presencial'
+    end
+    object chk_remoto: TCheckBox
+      Position.X = 224.000000000000000000
+      Position.Y = 32.000000000000000000
+      Size.Width = 73.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 39
+      Text = '&Remoto'
+    end
+    object chk_hibrido: TCheckBox
+      Position.X = 424.000000000000000000
+      Position.Y = 32.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 38
+      Text = '&H'#237'brido'
+    end
+  end
+  object grp_data: TGroupBox
+    Align = Top
+    Position.Y = 177.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 88.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Data do An'#250'ncio:'
+    TabOrder = 3
+    object rad_qualquer: TRadioButton
+      Position.X = 32.000000000000000000
+      Position.Y = 32.000000000000000000
+      Size.Width = 153.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 41
+      Text = 'A &qualquer momento'
+    end
+    object rad_semana: TRadioButton
+      Position.X = 351.000000000000000000
+      Position.Y = 32.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 40
+      Text = #218'ltima &semana'
+    end
+    object rad_mes: TRadioButton
+      Position.X = 224.000000000000000000
+      Position.Y = 32.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 39
+      Text = #218'ltimo &m'#234's'
+    end
+    object rad_24horas: TRadioButton
+      Position.X = 479.000000000000000000
+      Position.Y = 32.000000000000000000
+      Size.Width = 130.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 38
+      Text = #218'ltimas& 24 horas'
+    end
+  end
+  object pan_palavras: TPanel
+    Align = Top
+    Position.Y = 265.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 64.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    object lbl_palavras: TLabel
+      Position.X = 111.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 97.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Palavras-&chave:'
+      TabOrder = 1
+    end
+    object edt_palavras: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 2
+      Position.X = 224.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 368.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object btn_limpar: TButton
+    Position.X = 224.000000000000000000
+    Position.Y = 352.000000000000000000
+    TabOrder = 5
+    Text = '&Limpar'
+    OnClick = limpa_filtros
+  end
+  object btn_Exibir: TButton
+    Position.X = 479.000000000000000000
+    Position.Y = 352.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Text = 'E&xibir resultados'
+  end
+end
